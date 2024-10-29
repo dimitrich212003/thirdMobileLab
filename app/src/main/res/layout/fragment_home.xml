@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+    </ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/topBlock"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/light_orange">
+
+        <TextView
+            android:id="@+id/homeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Выйти"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:backgroundTint="@color/dark_orange"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listViewBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBlock">
+
+        <ListView
+            android:id="@+id/listViev"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

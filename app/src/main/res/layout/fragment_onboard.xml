@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboardFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/onboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="TamTam"
+        android:textSize="36dp"
+        android:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImage" />
+
+    <TextView
+        android:id="@+id/onboardSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Быстро, безопасно и со вкусом"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardTitle" />
+
+    <Button
+        android:id="@+id/onboardSignInButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="@color/dark_orange"
+        android:text="Войти"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardSubtitle"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <Button
+        android:id="@+id/onboardSignUpButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/dark_orange"
+        android:text="Зарегистрироваться"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardSignInButton"
+        app:layout_constraintVertical_bias="0.137" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
